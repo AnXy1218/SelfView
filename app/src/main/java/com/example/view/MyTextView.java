@@ -39,6 +39,9 @@ public class MyTextView extends View {
         super(context, attrs, defStyleAttr);
         Log.i(TAG,"MyTextView3");
 
+        //1.在attrs.xml文件中自定义所需的属性
+        //2.在引用自定义view的地方给自定义的属性设置值
+        //3.自定义View中取出这些值
         TypedArray typedArray = context.getTheme().obtainStyledAttributes(attrs,R.styleable.MyTextView,defStyleAttr,0);
         int n = typedArray.getIndexCount();
         for (int i=0;i<n;i++){
@@ -59,7 +62,7 @@ public class MyTextView extends View {
         typedArray.recycle();
 
         paint = new Paint();
-        paint.setTextSize(titleSize);
+        paint.setTextSize(titleSize);//设置字体
     }
 
     @Override
