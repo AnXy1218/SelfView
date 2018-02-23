@@ -15,6 +15,7 @@ import android.view.View;
 import com.example.exercise1.R;
 
 /**
+ * 自定义View：自定义属性
  * Created by Leovo on 2018/1/12.
  */
 public class MyTextView extends View {

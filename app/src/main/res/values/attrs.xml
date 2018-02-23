@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--MyTextView属性-->
     <attr name="title" format="string"/>
     <attr name="titleSize" format="dimension"/>
     <attr name="titleColor" format="color"/>
@@ -7,5 +9,10 @@
         <attr name="title"/>
         <attr name="titleSize"/>
         <attr name="titleColor"/>
+    </declare-styleable>
+
+    <!--MyView属性-->
+    <declare-styleable name="MyView">
+        <attr name="title"/>
     </declare-styleable>
 </resources>
