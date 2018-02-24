@@ -5,8 +5,10 @@
  #### 2.1 MyTextView
  #### 2.2 MyView(主要是OnMeasure方法的理解)
  onMeasure(int widthMeasureSpec, int heightMeasureSpec)方法中，widthMeasureSpec和heightMeasureSpec看起来是个int值，但它也包含了View的测量模式和View的大小值。其中测量模式有三种，用这两个值中的前两位记录，三种测量模式如下：
+ 
+ 
  | 测量模式 | 表示意思 |
- | ------  | :------:|
+ | ------  | ------ |
  | Exactly  | 最大值  |
  
  dfjfj
