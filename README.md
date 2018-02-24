@@ -1,4 +1,4 @@
-# SelfView
+# 自定义View
 ### 1. 项目介绍
  SelfView项目是用来提交平时感觉比较好的自定义View的。
 ### 2. 各个自定义View中的知识点
