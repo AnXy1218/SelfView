@@ -13,6 +13,13 @@
  |EXACTLY|当前尺寸就是当前View应该取得尺寸 | match_parent、固定尺寸（ex:100dp） |
  |AT_MOST|当前尺寸是当前View能取到的最大值 | wrap_content|
 
+ #### 2.3 MyLinearLayout
+ 相比于自定义View，自定义ViewGroup更为复杂一些，主要是自定义ViewGroup除了绘制自己外，还得兼顾自己子View的排列。子View的排列是在onLayout方法中实现：
+ ```
+ onLayout(boolean changed, int left, int top, int right, int bottom)
+ ```
+
+
  ### 参考文档：
  1. [Android 自定义View (一)](http://blog.csdn.net/lmj623565791/article/details/24252901)
  2. [自定义View，有这一篇就够了](http://blog.csdn.net/huachao1001/article/details/51577291)
