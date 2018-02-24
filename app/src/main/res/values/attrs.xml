@@ -15,4 +15,11 @@
     <declare-styleable name="MyView">
         <attr name="title"/>
     </declare-styleable>
+
+    <declare-styleable name="MyLinearLayout">
+        <attr name="orientation" format="enum">
+            <enum name="vertical" value="101"/>
+            <enum name="horizontal" value="102"/>
+        </attr>
+    </declare-styleable>
 </resources>

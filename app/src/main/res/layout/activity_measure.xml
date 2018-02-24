@@ -27,4 +27,55 @@
         android:layout_marginTop="10dp"
         app:title="宽度为wrap_content"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.view.MyLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0f0"
+            app:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这是一个水平排列的自定义ViewGroup"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="你好，哈哈哈就尽快尽快来看看"/>
+        </com.example.view.MyLinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.view.MyLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f00"
+            app:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这是一个垂直排列的自定义ViewGroup"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="你好，哈哈哈就尽快尽快来看看"/>
+        </com.example.view.MyLinearLayout>
+
+    </ScrollView>
+
+
+
 </LinearLayout>
