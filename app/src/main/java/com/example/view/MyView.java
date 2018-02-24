@@ -8,7 +8,6 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 
@@ -40,8 +39,11 @@ public class MyView extends View{
     public MyView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
-        TypedArray array = context.getTheme().obtainStyledAttributes(attrs, R.styleable.MyView,defStyleAttr,0);
+//        TypedArray array = context.getTheme().obtainStyledAttributes(attrs, R.styleable.MyView,defStyleAttr,0);
+        TypedArray array = context.obtainStyledAttributes(attrs,R.styleable.MyView);
         content = array.getString(R.styleable.MyTextView_title);
+
+        array.recycle();//获取到值以后，将array回收掉
 
 
         mPaint = new Paint();
@@ -59,7 +61,7 @@ public class MyView extends View{
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int myWidth = mySize(100,widthMeasureSpec,0);
         int myHeight = mySize(100,heightMeasureSpec,1);
-        Log.i(TAG,"width---->" + myWidth);
+//        Log.i(TAG,"width---->" + myWidth);
         setMeasuredDimension(myWidth,myHeight);
     }
 
