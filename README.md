@@ -8,6 +8,14 @@
  | 测量模式 | 表示意思 |
  | ------  | :------:|
  | Exactly  | 最大值  |
+ 
+ dfjfj
+ 
+ Name | Academy | score 
+- | :-: | -: 
+Harry Potter | Gryffindor| 90 
+Hermione Granger | Gryffindor | 100 
+Draco Malfoy | Slytherin | 90
  ### 参考文档：
  1. [Android 自定义View (一)](http://blog.csdn.net/lmj623565791/article/details/24252901)
  2. [自定义View，有这一篇就够了](http://blog.csdn.net/huachao1001/article/details/51577291)
