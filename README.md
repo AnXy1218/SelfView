@@ -42,12 +42,12 @@
  canvas.drawPath(path,paint);
  ```
  ##### 2.4.3 绘制矩形和圆角矩形
- 1) 矩形
+ 1 ) 矩形
  ```
  Rect rect = new Rect(0,0,100,100);
  canvas.drawRect(rect,paint);
  ```
- 2) 圆角矩形
+ 2 ) 圆角矩形
  ```
  RectF rectf = new RectF(0,0,100,100);
  canvas.drawRoundRect(rectf,20,10,paint);
