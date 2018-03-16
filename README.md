@@ -50,21 +50,21 @@
  2) 圆角矩形
  ```
  RectF rectf = new RectF(0,0,100,100);
- /**
-      * Draw the specified round-rect using the specified paint. The roundrect will be filled or
-      * framed based on the Style in the paint.
-      *
-      * @param rect The rectangular bounds of the roundRect to be drawn
-      * @param rx The x-radius of the oval used to round the corners
-      * @param ry The y-radius of the oval used to round the corners
-      * @param paint The paint used to draw the roundRect
-      */
  canvas.drawRoundRect(rectf,20,10,paint);
  ```
  **其中**
- ，drawRoundRect(RectF rect, float rx, float ry, Paint paint)的rx、ry表示如下
+ ，drawRoundRect(RectF rect, float rx, float ry, Paint paint)的rx、ry表示如下:
  ![](img/rectround.png)
-
+ ##### 2.4.4 绘制圆
+ ```
+ canvas.drawCircle(50,50,40,paint);
+ ```
+ **其中**，前两个参数为圆心位置，第三个参数为半径。
+ ##### 2.4.5 弧形
+ ```
+ canvas.drawArc(rectf,0,270,true,paint);
+ ```
+ **其中**，第二个参数为起始角度，第三个参数为从起始角度扫过的角度（eg：起始角度为90度，扫过为80度，那么最后的图形是90到170度之间的区域），第四个参数为是否需要带圆心
 
 
  ### 参考文档：
