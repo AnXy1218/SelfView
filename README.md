@@ -19,7 +19,7 @@
  onLayout(boolean changed, int left, int top, int right, int bottom)
  ```
 其中，changed表示该ViewGroup的大小和位置是否改变了，left表示该ViewGroup离父视图左边的距离。
-**注意：当ScrollView嵌套一个自定义控件时，该控件的MeasureSpec是UNSPECIFIED，这时要记得设置控件的大小，不然控件显示不全且无法实现滚动。
+_注意：_当ScrollView嵌套一个自定义控件时，该控件的MeasureSpec是UNSPECIFIED，这时要记得设置控件的大小，不然控件显示不全且无法实现滚动。
  #### 2.4 GraphView(基本图形的绘制)
  ##### 2.4.1 绘制线
  ```
