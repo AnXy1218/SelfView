@@ -50,9 +50,20 @@
  2) 圆角矩形
  ```
  RectF rectf = new RectF(0,0,100,100);
+ /**
+      * Draw the specified round-rect using the specified paint. The roundrect will be filled or
+      * framed based on the Style in the paint.
+      *
+      * @param rect The rectangular bounds of the roundRect to be drawn
+      * @param rx The x-radius of the oval used to round the corners
+      * @param ry The y-radius of the oval used to round the corners
+      * @param paint The paint used to draw the roundRect
+      */
  canvas.drawRoundRect(rectf,20,10,paint);
  ```
-
+ **其中**
+ ，drawRoundRect(RectF rect, float rx, float ry, Paint paint)的rx、ry表示如下
+ ![](img/rectround.png)
 
 
 

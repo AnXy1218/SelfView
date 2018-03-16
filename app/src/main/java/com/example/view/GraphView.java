@@ -113,7 +113,7 @@ public class GraphView extends View {
             case TYPE_ROUND_RECTANGLE:
                 //画一个圆角矩形
                 RectF rectf = new RectF(0,0,100,100);
-                canvas.drawRoundRect(rectf,20,20,paint);
+                canvas.drawRoundRect(rectf,20,10,paint);
                 break;
             case TYPE_CIRCLE:
                 //画一个圆
