@@ -18,7 +18,8 @@
  ```
  onLayout(boolean changed, int left, int top, int right, int bottom)
  ```
-其中，changed该ViewGroup的大小和位置是否改变了，left该ViewGroup离父视图左边的距离。
+其中，changed表示该ViewGroup的大小和位置是否改变了，left表示该ViewGroup离父视图左边的距离。
+**注意：当ScrollView嵌套一个自定义控件时，该控件的MeasureSpec是UNSPECIFIED，这时要记得设置控件的大小，不然控件显示不全且无法实现滚动。
  #### 2.4 GraphView(基本图形的绘制)
  ##### 2.4.1 绘制线
  ```
@@ -35,10 +36,23 @@
  path.lineTo(200,100);
  path.lineTo(100,50);
  path.close();//设置Path是闭合的
+ //2.调用canvas的drawPath方法
  canvas.drawPath(path,paint);
  ```
-### 注意：
-1.当ScrollView嵌套一个自定义控件时，该控件的MeasureSpec是UNSPECIFIED，这时要记得设置控件的大小，不然控件显示不全且无法实现滚动。
+ ##### 2.4.3 绘制矩形和圆角矩形
+ 1) 矩形
+ ```
+ Rect rect = new Rect(0,0,100,100);
+ canvas.drawRect(rect,paint);
+ ```
+ 2) 圆角矩形
+ ```
+ RectF rectf = new RectF(0,0,100,100);
+ canvas.drawRoundRect(rectf,20,10,paint);
+ ```
+
+
+
 
  ### 参考文档：
  1. [Android 自定义View (一)](http://blog.csdn.net/lmj623565791/article/details/24252901)
