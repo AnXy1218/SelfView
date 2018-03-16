@@ -76,6 +76,62 @@
 
     </ScrollView>
 
+    <com.example.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:orientation="horizontal">
+        <com.example.view.GraphView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:type="line"/>
+
+        <com.example.view.GraphView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:type="triangle"/>
+
+        <com.example.view.GraphView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:type="rectangle"/>
+    </com.example.view.MyLinearLayout>
+
+
+
+    <com.example.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:orientation="horizontal">
+        <com.example.view.GraphView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:type="polygon"/>
+
+        <com.example.view.GraphView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:type="round_rectangle"/>
+
+        <com.example.view.GraphView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:type="circle"/>
+
+        <com.example.view.GraphView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:type="arc"/>
+    </com.example.view.MyLinearLayout>
+
 
 
 </LinearLayout>
