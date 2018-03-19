@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <com.example.view.MyLinearLayout
+        <com.example.viewgroup.MyLinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#0f0"
@@ -50,14 +50,14 @@
                 android:layout_height="40dp"
                 android:gravity="center"
                 android:text="你好，哈哈哈就尽快尽快来看看"/>
-        </com.example.view.MyLinearLayout>
+        </com.example.viewgroup.MyLinearLayout>
     </HorizontalScrollView>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.example.view.MyLinearLayout
+        <com.example.viewgroup.MyLinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#f00"
@@ -72,11 +72,11 @@
                 android:layout_height="40dp"
                 android:gravity="center"
                 android:text="你好，哈哈哈就尽快尽快来看看"/>
-        </com.example.view.MyLinearLayout>
+        </com.example.viewgroup.MyLinearLayout>
 
     </ScrollView>
 
-    <com.example.view.MyLinearLayout
+    <com.example.viewgroup.MyLinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
@@ -98,11 +98,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             app:type="rectangle"/>
-    </com.example.view.MyLinearLayout>
+    </com.example.viewgroup.MyLinearLayout>
 
 
 
-    <com.example.view.MyLinearLayout
+    <com.example.viewgroup.MyLinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
@@ -130,7 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             app:type="arc"/>
-    </com.example.view.MyLinearLayout>
+    </com.example.viewgroup.MyLinearLayout>
 
 
 

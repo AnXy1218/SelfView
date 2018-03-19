@@ -15,15 +15,14 @@ import android.view.View;
 import com.example.exercise1.R;
 
 /**
- * 类描述：
+ * 类描述：常见图形
  * 创建时间：2018/3/16
  *
  * @author chaochao
  */
 
 public class GraphView extends View {
-
-//    <!--线-->
+//            <!--线-->
 //            <enum name="line" value="1001"/>
 //
 //            <!--三角形-->
@@ -89,8 +88,11 @@ public class GraphView extends View {
                 //画一个三角形
                 Path path = new Path();
                 path.moveTo(10,0);
-                path.lineTo(100,100);
-                path.lineTo(5,9);
+//                path.lineTo(100,100);
+//                path.lineTo(5,9);
+
+                path.rLineTo(100,100);
+                path.rLineTo(-100,9);
                 path.close();
                 canvas.drawPath(path,paint);
                 break;
