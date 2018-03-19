@@ -43,9 +43,6 @@
  //2.调用canvas的drawPath方法
  canvas.drawPath(path,paint);
  ```
- Same as lineTo, but the coordinates are considered relative to the last
-      * point on this contour. If there is no previous point, then a moveTo(0,0)
-      * is inserted automatically.
  **注意：**rLineTo，和lineTo基本一样，区别在于rLineTo是基于该坐标系中最后一个点。如果没有上一个点，原点(0,0)就是默认的上一个点。
  ##### 2.4.3 绘制矩形和圆角矩形
  1 ) 矩形
