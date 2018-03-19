@@ -76,3 +76,4 @@
  3. [手把手教你写一个完整的自定义View](http://blog.csdn.net/carson_ho/article/details/62037696)
  4. [安卓自定义View进阶 - 贝塞尔曲线](http://blog.csdn.net/u013831257/article/details/51281136)
  5. [ScrollView和HorizontalScrollView中添加的自定义View控件无法显示问题](http://blog.csdn.net/qq_25929547/article/details/53142161)
+ 6. [Android Canvas之Path操作](https://www.jianshu.com/p/9ad3aaae0c63)
