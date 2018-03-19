@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tvMeasure;
+    private TextView tvMeasure,tvPath;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tvMeasure = findViewById(R.id.tvOnMeasure);
+        tvPath = findViewById(R.id.tvPath);
         tvMeasure.setOnClickListener(mOnClickListener);
+        tvPath.setOnClickListener(mOnClickListener);
     }
 
     private View.OnClickListener mOnClickListener = new View.OnClickListener() {
@@ -25,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
                case R.id.tvOnMeasure:
                    Intent intent = new Intent(MainActivity.this,MeasureActivity.class);
                    startActivity(intent);
+                   break;
+               case R.id.tvPath:
+                   Intent pathIntent = new Intent(MainActivity.this,PathActivity.class);
+                   startActivity(pathIntent);
                    break;
            }
         }

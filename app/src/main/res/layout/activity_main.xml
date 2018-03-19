@@ -19,6 +19,15 @@
         android:background="#0f0"
         android:text="跳转到OnMeasure方法介绍"
         android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvPath"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#0f0"
+        android:text="跳转到PathView"
+        android:gravity="center"/>
     
 
     <com.example.view.MyTextView

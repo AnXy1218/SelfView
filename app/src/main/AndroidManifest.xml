@@ -18,6 +18,7 @@
         </activity>
 
         <activity android:name=".MeasureActivity"></activity>
+        <activity android:name=".PathActivity"></activity>
     </application>
 
 </manifest>

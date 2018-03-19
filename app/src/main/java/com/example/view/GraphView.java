@@ -18,7 +18,7 @@ import com.example.exercise1.R;
  * 类描述：常见图形
  * 创建时间：2018/3/16
  *
- * @author chaochao
+ * @author An xy
  */
 
 public class GraphView extends View {
