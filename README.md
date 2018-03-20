@@ -81,6 +81,7 @@
  具体参考：[Android绘图：绘制多条直线的 drawLines方法](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2012/1224/739.html)
  ##### 2.5.3 贝塞尔曲线
  Path中提供quadTo(二阶)、cubicTo(三阶)函数
+
  具体参考： [安卓自定义View进阶 - 贝塞尔曲线](http://blog.csdn.net/u013831257/article/details/51281136)
 
  1）二阶
