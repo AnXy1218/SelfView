@@ -82,15 +82,16 @@
  ##### 2.5.3 贝塞尔曲线
  Path中提供quadTo(二阶)、cubicTo(三阶)函数
  具体参考： [安卓自定义View进阶 - 贝塞尔曲线](http://blog.csdn.net/u013831257/article/details/51281136)
+
  1）二阶
  ```
  quadTo(float x1, float y1, float x2, float y2)
  ```
  其中，(x1,y1)是控制点的坐标，(x2,y2)是结束点坐标。
+
  2）三阶
  ```
- cubicTo(float x1, float y1, float x2, float y2,
-                        float x3, float y3)
+ cubicTo(float x1, float y1, float x2, float y2,float x3, float y3)
  ```
  其中，(x1,y1)和(x2,y2)是控制点，(x3,y3)是结束点。
 
