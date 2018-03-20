@@ -68,12 +68,35 @@
  canvas.drawArc(rectf,0,270,true,paint);
  ```
  **其中**，第二个参数为起始角度，第三个参数为从起始角度扫过的角度（eg：起始角度为90度，扫过为80度，那么最后的图形是90到170度之间的区域），第四个参数为是否需要带圆心
-
+ #### 2.5 PathView（对Path类）
+ ##### 2.5.1 沿着一个路径写文字
+ ```
+ //1.先定义一个Path
+ Path path = new Path();
+ ...
+ canvas.drawTextOnPath(String text,Path path, float hOffset,
+                       float vOffset, Paint paint);
+ ```
+ ##### 2.5.2 drawLines
+ 具体参考：[Android绘图：绘制多条直线的 drawLines方法](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2012/1224/739.html)
+ ##### 2.5.3 贝塞尔曲线
+ Path中提供quadTo(二阶)、cubicTo(三阶)函数
+ 具体参考： [安卓自定义View进阶 - 贝塞尔曲线](http://blog.csdn.net/u013831257/article/details/51281136)
+ 1）二阶
+ ```
+ quadTo(float x1, float y1, float x2, float y2)
+ ```
+ 其中，(x1,y1)是控制点的坐标，(x2,y2)是结束点坐标。
+ 2）三阶
+ ```
+ cubicTo(float x1, float y1, float x2, float y2,
+                        float x3, float y3)
+ ```
+ 其中，(x1,y1)和(x2,y2)是控制点，(x3,y3)是结束点。
 
  ### 参考文档：
  1. [Android 自定义View (一)](http://blog.csdn.net/lmj623565791/article/details/24252901)
  2. [自定义View，有这一篇就够了](http://blog.csdn.net/huachao1001/article/details/51577291)
  3. [手把手教你写一个完整的自定义View](http://blog.csdn.net/carson_ho/article/details/62037696)
- 4. [安卓自定义View进阶 - 贝塞尔曲线](http://blog.csdn.net/u013831257/article/details/51281136)
- 5. [ScrollView和HorizontalScrollView中添加的自定义View控件无法显示问题](http://blog.csdn.net/qq_25929547/article/details/53142161)
- 6. [Android Canvas之Path操作](https://www.jianshu.com/p/9ad3aaae0c63)
+ 4. [ScrollView和HorizontalScrollView中添加的自定义View控件无法显示问题](http://blog.csdn.net/qq_25929547/article/details/53142161)
+ 5. [Android Canvas之Path操作](https://www.jianshu.com/p/9ad3aaae0c63)
