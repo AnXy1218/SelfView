@@ -57,7 +57,7 @@
  ```
  **其中**
  ，drawRoundRect(RectF rect, float rx, float ry, Paint paint)的rx、ry表示如下:
- ![rectround](img/rectround.png)
+ ![](img/rectround.png)
  ##### 2.4.4 绘制圆
  ```
  canvas.drawCircle(50,50,40,paint);
@@ -94,13 +94,15 @@
  其中，(x1,y1)是控制点的坐标，(x2,y2)是结束点坐标。
 
  例如：起始点分别是(50,100)、(300,150),控制点是(100,400)形成的图形如下（红色曲线）：
-
-
+ ![](img/bezier_second.png)
  2）三阶
  ```
  cubicTo(float x1, float y1, float x2, float y2,float x3, float y3)
  ```
  其中，(x1,y1)和(x2,y2)是控制点，(x3,y3)是结束点。
+
+ 例如：在二阶基础上添加一个控制点(200,50)后形成曲线如下：
+ ![](img/bezier_third.png)
 
  ### 参考文档：
  1. [Android 自定义View (一)](http://blog.csdn.net/lmj623565791/article/details/24252901)
