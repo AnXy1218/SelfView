@@ -57,7 +57,7 @@
  ```
  **其中**
  ，drawRoundRect(RectF rect, float rx, float ry, Paint paint)的rx、ry表示如下:
- ![](img/rectround.png)
+ ![rectround](img/rectround.png)
  ##### 2.4.4 绘制圆
  ```
  canvas.drawCircle(50,50,40,paint);
@@ -92,6 +92,9 @@
  quadTo(float x1, float y1, float x2, float y2)
  ```
  其中，(x1,y1)是控制点的坐标，(x2,y2)是结束点坐标。
+
+ 例如：起始点分别是(50,100)、(300,150),控制点是(100,400)形成的图形如下（红色曲线）：
+
 
  2）三阶
  ```
