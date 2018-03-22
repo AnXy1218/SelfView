@@ -43,7 +43,7 @@
  //2.调用canvas的drawPath方法
  canvas.drawPath(path,paint);
  ```
- **注意：**rLineTo，和lineTo基本一样，区别在于rLineTo是基于该坐标系中最后一个点。如果没有上一个点，原点(0,0)就是默认的上一个点。
+ **注意：** rLineTo，和lineTo基本一样，区别在于rLineTo是基于该坐标系中最后一个点。如果没有上一个点，原点(0,0)就是默认的上一个点。
  ##### 2.4.3 绘制矩形和圆角矩形
  1 ) 矩形
  ```
