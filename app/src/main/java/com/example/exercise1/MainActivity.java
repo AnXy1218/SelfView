@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tvMeasure,tvPath;
+    private TextView tvMeasure,tvPath,tvPalette;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
         tvMeasure = findViewById(R.id.tvOnMeasure);
         tvPath = findViewById(R.id.tvPath);
+        tvPalette = findViewById(R.id.tvPalette);
         tvMeasure.setOnClickListener(mOnClickListener);
         tvPath.setOnClickListener(mOnClickListener);
+        tvPalette.setOnClickListener(mOnClickListener);
     }
 
     private View.OnClickListener mOnClickListener = new View.OnClickListener() {
@@ -31,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
                case R.id.tvPath:
                    Intent pathIntent = new Intent(MainActivity.this,PathActivity.class);
                    startActivity(pathIntent);
+                   break;
+               case R.id.tvPalette:
+                   Intent paletteIntent = new Intent(MainActivity.this,PaletteActivity.class);
+                   startActivity(paletteIntent);
                    break;
            }
         }
